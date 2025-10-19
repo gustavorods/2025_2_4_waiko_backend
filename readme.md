@@ -29,3 +29,7 @@ To run the project, you must add an AUTH_KEY in a `.env` file. You can use `.env
 ```bash
 npm start
 ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
