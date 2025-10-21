@@ -1,0 +1,24 @@
+{
+  "name": "2025_2_4_waiko_backend",
+  "version": "1.0.0",
+  "description": "**Tagline**: Securely storing customer data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavorods/2025_2_4_waiko_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavorods/2025_2_4_waiko_backend/issues"
+  },
+  "homepage": "https://github.com/gustavorods/2025_2_4_waiko_backend#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
+}
