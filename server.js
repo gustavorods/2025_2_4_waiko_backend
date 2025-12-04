@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
-const firebaseApp = require("./config/firebaseConfig");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,11 +9,13 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+// Imports and routes
 const userRoutes = require('./routes/userRoutes');
+const auth = require('./middlewares/auth');
 app.use('/api', userRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Firebase Online Mohantico!') // THANK U BERNASSSSSSSSSSSSSSS
+    res.send("👌"); 
 })
 
 // Only start the server if it is not running in test mode
