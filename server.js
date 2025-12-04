@@ -12,7 +12,7 @@ app.use(express.json());
 // Imports and routes
 const userRoutes = require('./routes/userRoutes');
 const auth = require('./middlewares/auth');
-app.use('/api', userRoutes);
+app.use('/api', auth.checkApiKey, userRoutes);
 
 app.get('/', (req, res) => {
     res.send("👌"); 
